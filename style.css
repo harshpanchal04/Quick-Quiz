@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro-container, .quiz-container, .summary-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #EDF5FF;
+}
+
+.intro-container {
+    display: flex;
+}
+
+.intro-container h1 {
+    font-size: 3rem;
+    color: #56A5EB;
+}
+
+.intro-container .start-btn, .summary-container button {
+    padding: 8px 30px;
+    margin-top: 20px;
+    color: #56A5EB;
+    font-size: 1.2rem;
+    border: 2px solid #56A5EB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro-container .start-btn:hover, .summary-container button:hover {
+    background-color: #56A5EB;
+    color: #EDF5FF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.question-number, .score-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.question-text {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer {
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.answer-letter {
+    padding: 10px;
+    background-color: #56A5EB;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.answer-text {
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.answer:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.summary-container .final-score {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
